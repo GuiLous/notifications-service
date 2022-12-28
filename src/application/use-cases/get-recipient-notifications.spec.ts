@@ -3,7 +3,7 @@ import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-no
 import { GetRecipientNotifications } from './get-recipient-notifications';
 
 describe('Get Recipient Notifications', () => {
-  it('should be able to get all recipients notifications by recipient', async () => {
+  it('should be able to get all recipients notifications', async () => {
     const notificationsRepository = new InMemoryNotificationsRepository();
     const getRecipientNotifications = new GetRecipientNotifications(
       notificationsRepository,
